@@ -5,12 +5,10 @@ function filterSelection(category) {
     if (category == "all") category = "";
 
 
-    for (i=0; i<column.length; i++) {
-        console.log(column[i]);
+    for (i=0; i<column.length; i++) {        
             setTimeout(
                 column[i].classList.remove("show")
-                , 5000);
-        
+                , 5000);        
         if (column[i].className.indexOf(category) > -1) {
             setTimeout(
                 column[i].classList.add("show")
@@ -20,9 +18,7 @@ function filterSelection(category) {
 }
 
 var controls = document.getElementsByClassName("control");
-console.log(controls);
-for (var i = 0; i < controls.length; i++) {   
-    console.log(controls[i]);     
+for (var i = 0; i < controls.length; i++) {           
     controls[i].addEventListener("click", function(){           
         var current = document.getElementsByClassName("active");        
         current[0].className = current[0].className.replace(" active", "");        
@@ -39,14 +35,12 @@ var modal = document.querySelector('.modal');
 
 var imgs =document.querySelectorAll('.column a');
 var modalImg = document.querySelector(".modal-content");
-console.log(imgs);
 
 imgs.forEach(function(img){
 
     img.addEventListener('click', function(e){
         e.preventDefault();
-        modal.style.display = "block";
-        console.log(this.href);
+        modal.style.display = "block";        
         modalImg.src = this.href;
     })
 })
