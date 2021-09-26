@@ -23,7 +23,7 @@ sliderArr.forEach(function(slider){
         this.sliderList = slider.querySelector('.slider-list');
         this.sliderFirstElem = slider.querySelector('.slider-item');;
         this.sliderList.removeChild(this.sliderFirstElem);
-        this.sliderList.style.transition = 'none';
+        this.sliderList.style.transition = 'none'; 
         this.sliderList.style.left = 0 + 'px';       
         }         
     autoCarousel();
@@ -40,115 +40,10 @@ sliderArr.forEach(function(slider){
 })
 
 
-
-
-
-
-
-//     function draw2(){    
-//         let sliderList2 = document.querySelector('.slider-list-2');
-//         console.log(sliderList2);
-//         sliderList2.style.transition = '1s ease 0s';        
-//         let sliderFirstElem2 = document.querySelector('.slider-item-2');
-//         let firstSrc2 = sliderFirstElem2.style.backgroundImage;        
-//         let newSlide2 = document.createElement('div');
-//         newSlide2.style.backgroundImage=firstSrc2;
-//         newSlide2.classList.add('slider-item-2');
-//         sliderList2.append(newSlide2);           
-//         }
-// function moveLeft2(){
-//         let sliderList2 = document.querySelector('.slider-list-2');
-//         sliderList2.style.left = -271.844 + 'px';
-//         }
-// function clearFirstItem2(){
-//         let sliderList2 = document.querySelector('.slider-list-2');
-//         let sliderFirstElem2 = document.querySelector('.slider-item-2');;
-//         sliderList2.removeChild(sliderFirstElem2);
-//         sliderList2.style.transition = 'none';
-//         sliderList2.style.left = 0 + 'px';       
-//         }         
-//     autoCarousel2();
-//     function autoCarousel2(){               
-//             setTimeout(() => {
-//                 draw2();
-//                 moveLeft2();
-//                 setTimeout(
-//                     clearFirstItem2                
-//                 , 1000);
-//             autoCarousel2();               
-//         }, 5000);                     
-//     };
-
-
  
 
 // Progress-bar
-// function startProgress() {
-//     // **************рабочая версия, но запускается не по скролу
-// let progresses = document.querySelectorAll('.progress-bar-style');
-//  progresses.forEach(function(progressbar){      
-//     // line-run  
-//     let n=0;
-//         this.width = progressbar.getAttribute('data-progress')+'%';        
-//         this.x = progressbar.getAttribute('data-progress');                
-//         let progress = progressbar.querySelector('.bar-inner'); 
-//         progress.style.width = this.width;        
-// // time-run
-// const time = 1200;
-// const step = 1;
-// outNum(this.x,'out-1');
-// function outNum(num, elem) {
-//     let l = progressbar.querySelector('#' + elem);     
-//     let t = Math.round(time/(num/step));
-//     let interval = setInterval(() => {
-//         n=n+step;
-//         if (n == num) {
-//             clearInterval(interval);            
-//         }
-//         l.innerHTML = n +"%";
-//     },t);
-// }
-// });
-//     // ***************
-// };
 
-// let progresses = document.querySelectorAll('.progress-bar-style');
-// progresses.forEach(function(progressbar){
-// // line-run   
-// let currentcount=0;
-// this.width = progressbar.getAttribute('data-progress')+'%'; 
-// // console.log(this.width);       
-// this.dataprogress = progressbar.getAttribute('data-progress');
-// console.log(this.dataprogress);                  
-// let progress = progressbar.querySelector('.bar-inner'); 
-// let progressTop = progress.getBoundingClientRect().top;
-
-// window.addEventListener('scroll', function onScroll(){
-//     // console.log(this.width);
-//     console.log(this.dataprogress);  
-//     if (window.pageYOffset > progressTop - window.innerHeight/2){
-//         this.removeEventListener('scroll',onScroll);
-//         progress.style.width = this.width;  // контекст не проходит
-//         // time-run
-//         const time = 1200;
-//         const step = 1;
-//         outNum(this.dataprogress,'out-1');      // контекст не проходит
-//         function outNum(endcount, elem) {
-//             let l = progressbar.querySelector('#' + elem);     
-//             let t = Math.round(time/(endcount/step));
-//             let interval = setInterval(() => {
-//                 currentcount=currentcount+step;
-//                 if (currentcount == endcount) {
-//                     clearInterval(interval);            
-//                 }
-//                 l.innerHTML = currentcount +"%";
-//             },t);
-//         }
-//     }
-// })
-// })
-
-// рабочая версия на одну полоску
 
 let progressbar1 = document.querySelector('.single-progress-item .progress-bar-style1');  
 
@@ -237,33 +132,5 @@ let progressbar3 = document.querySelector('.single-progress-item .progress-bar-s
            }
        })            
 
-//           let progressbar1 = document.querySelector('.single-progress-item .progress-bar-style1');  
-// console.log(progressbar1);  
-//     // line-run  
-//     let currentcount=0;
-//     const width1 = progressbar1.getAttribute('data-progress')+'%'; 
-//     const dataprogress1 = progressbar1.getAttribute('data-progress');        
-//     let progress1 = progressbar1.querySelector('.bar-inner');
-//     let progressTop1 = progress1.getBoundingClientRect().top;   
-//      window.addEventListener('scroll', function onScroll(){
-//          if (window.pageYOffset > progressTop1 - window.innerHeight/1.1){
-//              this.removeEventListener('scroll',onScroll);
-//              progress1.style.width = width1;
-//             // time-run
-//             const time = 1200;
-//             const step = 1;
-//             outNum(dataprogress1,'out-1');
-//             function outNum(endcount, elem) {
-//                 let l = document.querySelector('#' + elem);     
-//                 let t = Math.round(time/(endcount/step));
-//                 let interval = setInterval(() => {
-//                     currentcount=currentcount+step;
-//                     if (currentcount == endcount) {
-//                         clearInterval(interval);            
-//                     }
-//                     l.innerHTML = currentcount +"%";
-//                 },t);
-//             }
-//          }
-//      })     
+
 
