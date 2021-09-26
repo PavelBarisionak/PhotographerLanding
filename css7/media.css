@@ -1,0 +1,236 @@
+@media (max-width: 1920px){
+    .slider-item{
+        width: 271.844px; 
+        height: 271.844px;
+    }
+    .slider-list{
+        height: 271.84px;
+    }
+    .slider-hider{
+        height: 271.84px;
+    }  
+}
+@media (max-width: 1440px){
+    .slider-item{
+        width: 205.7px;
+        height: 205.7px;         
+    }
+    .slider-list{
+        height: 205.7px;
+    }
+    .slider-hider{
+        height: 205.7px;
+    }    
+}
+
+@media (max-width: 1280px){
+    .slider-item{
+        width: 256px;
+        height: 256px;         
+    }
+    .slider-list{
+        height: 256px;
+    }
+    .slider-hider{
+        height: 256px;
+    }  
+
+}
+@media (max-width: 1152px){
+    .slider-item{
+        width: 288px;
+        height: 288px;         
+    }
+    .slider-list{
+        height: 288px;
+    }
+    .slider-hider{
+        height: 288px;
+    }  
+
+}
+
+@media (max-width: 1024px){
+    .slider-item{
+        width: 256px;
+        height: 256px;         
+    }
+    .slider-list{
+        height: 256px;
+    }
+    .slider-hider{
+        height: 256px;
+    }  
+    .row-text {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .row-progress {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .header-section {
+		text-align: center;
+		padding-bottom: 0;
+        display: block;
+	}
+    a.site-logo{
+        padding-left: 0px;
+    }
+    .main-menu {
+		display: none !important;
+	}
+    
+	.slicknav-menu {
+		display: block;		
+        box-sizing: border-box;                
+	}
+    .slicknav_nav {     
+        display: none;        
+        position: relative;
+        top: 0;
+        left: 0;   
+        width: 100%;
+        height: auto;        
+        display: block;
+        height: 0px;
+        background: #081624;
+        text-align: left;
+        padding: 0px 5px;        
+        font-size: .875em; 
+        list-style: none;        
+        overflow: auto;    
+        box-sizing: border-box;  
+        transition: height 0.5s ease;                                  
+    }
+    .slicknav_nav._active { 
+        display: block;
+        height: 134px;             
+        transition: 0.3s ease 0s;        
+        transition: height 0.5s ease;
+    }
+	.slicknav_btn {
+        border: none;
+		margin: 0 auto 20px;
+		background: #081624;
+		float: none;		
+        margin: 5px 5px 6px;        
+        text-shadow: 0 1px 1px rgb(255 255 255 / 75%);    
+        border-radius: 4px;  
+        cursor: pointer;   
+        position: relative;         
+        padding: .438em .625em;
+        line-height: 1.125em; 
+        box-sizing: border-box;                 
+	}
+	
+}
+
+@media (max-width: 800px){
+    .slider-item{
+        width: 266.66px;
+        height: 266.66px;         
+    }
+    .slider-list{
+        height: 266.66px;
+    }
+    .slider-hider{
+        height: 266.66px;
+    }  
+    div.row-text {
+        flex: none;
+        max-width: none;
+    }
+    div.row-progress {
+        flex: none;
+        min-width: 90%;
+    }
+
+}
+@media (max-width: 768px){
+    .slider-item{
+        width: 383.5px;
+        height: 383.5px;         
+    }
+    .slider-list{
+        height: 383.5px;
+    }
+    .slider-hider{
+        height: 383.5px;
+    } 
+}
+
+@media (max-width: 768px){
+    .row-social {
+        order: 1;
+        flex: auto;
+        max-width: none;       
+        
+    }
+    .row-social .footer-social-links{
+        text-align: center;	
+    }
+    .row-social .footer-social-links a{
+        margin:  5px 20px 5px 20px;
+    }
+    
+    .row-copyright {
+        order: 2;
+        flex: auto;
+        max-width: none	;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+}
+
+@media (max-width: 425px){
+    .slider-item{
+        width: 425px;
+        height: 425px;         
+    }
+    .slider-list{
+        height: 425px;
+    }
+    .slider-hider{
+        height: 425px;
+    } 
+    .intro-text h2{
+        font-size: 36px;
+    } 
+    .skill-warp {
+        padding-left: 20px;
+        padding-top: 80px;
+    }
+
+}
+
+@media (max-width: 375px){
+    .slider-item{
+        width: 375px;
+        height: 375px;         
+    }
+    .slider-list{
+        height: 375px;
+    }
+    .slider-hider{
+        height: 
+        375px;
+    }  
+
+}
+
+@media (max-width: 320px){
+    .slider-item{
+        width: 320px;
+        height: 320px;         
+    }
+    .slider-list{
+        height: 320px;
+    }
+    .slider-hider{
+        height: 
+        320px;
+    }  
+
+}

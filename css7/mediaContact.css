@@ -1,0 +1,40 @@
+@media (max-width: 1024px){
+    .row-info {
+        flex: 0 0 33.3333%;
+        max-width: 33%;
+    }
+    .row-contact {
+        flex: 0 0 66.6666%;
+        max-width: 66%;
+    }
+}
+
+@media (max-width: 800px){
+    .row-info {
+        flex: unset;
+        max-width: unset;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    .row-contact {
+        flex: unset;
+        max-width: unset;
+    }
+}
+
+@media (max-width: 425px){
+    .contact-section {
+        padding: 30px 0;        
+    }
+    .row-name {
+        flex: 0 0 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .row-email {
+        flex: 0 0 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
