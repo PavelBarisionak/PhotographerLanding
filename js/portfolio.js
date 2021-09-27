@@ -15,14 +15,14 @@ function filterSelection(category) {
         };          
     }
 }
-// var controls = document.getElementsByClassName("control");
-// for (var i = 0; i < controls.length; i++) {           
-//     controls[i].addEventListener("click", function(){           
-//         var current = document.getElementsByClassName("active");        
-//         current[0].className = current[0].className.replace(" active", "");        
-//         this.className += " active";
-//     });
-// }
+var controls = document.getElementsByClassName("control");
+for (var i = 0; i < controls.length; i++) {           
+    controls[i].addEventListener("click", function(){           
+        var current = document.getElementsByClassName("active");        
+        current[0].className = current[0].className.replace(" active", "");        
+        this.className += " active";
+    });
+}
 
 // **********  popup *********
 
